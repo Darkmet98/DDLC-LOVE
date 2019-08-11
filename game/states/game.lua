@@ -35,13 +35,13 @@ function drawGame()
 	elseif autoskip > 0 then
 		local skiptext
 		if sectimer >= 0.75 then
-			skiptext = 'Skipping >>>'
+			skiptext = tr.skip
 		elseif sectimer >= 0.5 then
-			skiptext = 'Skipping >>'
+			skiptext = tr.skip
 		elseif sectimer >= 0.25 then
-			skiptext = 'Skipping >'
+			skiptext = tr.skip
 		else
-			skiptext = 'Skipping'
+			skiptext = tr.skip
 		end
 		lg.draw(gui.skip,0,27)
 		lg.setColor(0,0,0)
