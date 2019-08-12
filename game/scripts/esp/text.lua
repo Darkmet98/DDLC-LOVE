@@ -1,6 +1,32 @@
 tr = {}
 tr.selectlang = "Selecciona un idioma:"
-tr.skip = "Saltando"
+tr.auto = "Automático"
+tr.skip = {'Saltando', 'Saltando >', 'Saltando >>', 'Saltando >>>'}
+tr.missing = {
+	'Error: Script file is missing or corrupt.\nPlease reinstall the game.',
+	'OK'
+}
+tr.credits = {
+	--Song
+	'Cada día, imagino un futuro en el que estoy junto a ti.',
+	'In my hand is a pen that will write a poem of me and you',
+	'The ink flows down into a dark puddle',
+	'Just move your hand - write the way into his heart!',
+	'But in this world of infinite choices',
+	'What will it take just to find that special day?',
+	--Credits
+	'Concepto y diseño',
+	'Diseño de personajes',
+	'Diseño de fondos',
+	'Guion',
+	'Música',
+	'Voces',
+	'Agradecimientos especiales',
+	--Console
+	'ha sido eliminado',
+	'Reproduciendo'
+}
+
 tr.names = {'Sayori','Natsuki','Yuri','Monika','Nat y Yuri'}
 tr.poemtime = 
 [[
@@ -26,7 +52,7 @@ tr.splash = {
 	"This game is not suitable for children",
 	"  or those who are easily disturbed.",
 	"Now everyone can be happy.",
-	"Port realizado por LukeeGD".."\nTraducido por GlowTranslations\nVersión: 1.0" --you may add more credits here
+	"Port realizado por LukeeGD".."\nGlowTranslations\nVersión: 1.0" --you may add more credits here
 }
 tr.menuitem = {'Sí','No','Borrar ','Restaurar todo'}
 tr.menuhelp = {

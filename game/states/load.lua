@@ -37,12 +37,6 @@ function updateLoad()
 	
 	--save check
 	if l_timer == 99 then		
-
-		--[[if f2 and settings.lang then
-			require('scripts/'..settings.lang..'/text')
-		else
-			require('scripts/eng/text')
-		end]]
 		
 		if dvertype == 'Test' then
 			l_timer = 100

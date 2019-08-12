@@ -60,8 +60,10 @@ function cw(p1, stext, tag)
 	if stext == nil then stext = '' end
 	
 	--auto add quotation marks
-	if p1 ~= 'bl' then
-		stext = '"'..stext..'"'
+	if settings.lang ~= 'esp' then
+		if p1 ~= 'bl' then
+			stext = '"'..stext..'"'
+		end
 	end
 	
 	--text drip for scripts
