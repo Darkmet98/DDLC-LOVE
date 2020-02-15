@@ -3,6 +3,7 @@ function loaderAssets(l_timer)
 	if l_timer == 96 then
 		consolefont = lg.newFont('assets/fonts/F25_Bank_Printer.ttf',18)
 		allerfont = lg.newFont('assets/fonts/Aller_Rg.ttf',22)
+		allerfontDialog = lg.newFont('assets/fonts/Aller_Rg.ttf',24)
 		lg.setFont(allerfont)
 		
 	elseif l_timer == 97 then

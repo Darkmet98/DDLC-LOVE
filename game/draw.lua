@@ -38,7 +38,7 @@ function outlineText(text,x,y,type,arg1)
 	if g_system == 'PSP' or g_system == 'PS3' or settings.outline == 1 then
 		lg.setColor(0,0,0,alpha)
 	else
-		local addm = 1.25
+		local addm = 2
 		if type == 'ct' then
 			lg.setColor(187,85,153,alpha)
 			addm = 2
@@ -174,7 +174,7 @@ function drawTextBox()
 		if style_edited then
 			lg.setFont(deffont)
 		else
-			lg.setFont(allerfont)
+			lg.setFont(allerfontDialog)
 		end
 		if c_disp[1] and g_system == 'PS3' then
 			for i = 1, #c_disp do
