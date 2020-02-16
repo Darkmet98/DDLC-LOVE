@@ -22,11 +22,14 @@ function updateLoad()
 	if l_timer < 99 then
 		l_timer = l_timer + 1
 	end
-	
-	if l_timer == 98 then
+
+
+
+	if l_timer == 97 then
 		if f2 then
 			loadsettings()
 			require('scripts/'..settings.lang..'/text')
+			loaderAssets(101)
 		end
 		if not f2 then
 			require('scripts/eng/text')

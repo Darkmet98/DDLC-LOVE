@@ -517,7 +517,8 @@ function menu_confirm()
 		settings.lang = lang_codes[m_selected-1]
 		savesettings()
 		require('scripts/'..settings.lang..'/text')
-		l_timer = 99
+		loaderAssets(101)
+		l_timer = 97
 		changeState('load')
 	end
 end
