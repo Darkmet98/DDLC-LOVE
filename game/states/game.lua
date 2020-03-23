@@ -50,7 +50,7 @@ function drawGame()
 	if menu_enabled then menu_draw() end
 end
 
-function updateGame(dt)
+function updateGame()
 	scriptCheck()
 	
 	--timercheck
@@ -104,7 +104,7 @@ function updateGame(dt)
 		end
 	end
 	
-	if event_enabled then event_update(dt) end
+	if event_enabled then event_update() end
 end
 
 function game_keypressed(key)
@@ -144,7 +144,7 @@ function newgame_keypressed(key)
 	elseif key == 'r' or key == 'rbutton' or key == 'plus' then
 		textboxd = not textboxd
 	elseif key == 'minus' or key == '-' or key == 'select' then
-		if settings.outline ~= 1 then settings.outline = 1
-		else settings.outline = 0 end
+		if settings.o ~= 1 then settings.o = 1
+		else settings.o = 0 end
 	end
 end

@@ -2,7 +2,6 @@ audio_ext = '.mp3'
 local audio_wloop = {'1','2','3','4','4g','5','5_monika','5_natsuki','5_sayori','5_yuri','6','7g','8','10','d','monika-end'}
 
 function audioUpdate(audiox, forceload) --audio changes
-
 	if audio1 ~= audiox or forceload then
 		if audio_bgm then audio_bgm:stop() end
 		if audio_bgmloop then audio_bgmloop:stop() end
